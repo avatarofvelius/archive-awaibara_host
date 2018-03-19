@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Arc Opening Test </title>
+  <script src="modernizr-latest.js"></script>
+  
+  <script type="text/javascript">
+  
+  window.addEventListener('load', eventWindowLoaded, false);
+
+  function eventWindowLoaded ()
+    {
+      canvasApp();
+    }
+  
+  function canvasSupport ()
+    {
+      return Modernizr.canvas;
+    }  
+    
+  function canvasApp ()
+    {      
+      if (!canvasSupport())
+        {
+          return;        
+        }
+      else
+        {
+          var theCanvas = document.getElementById("canvas");
+          var context = theCanvas.getContext("2d");
+        }
+        
+      var windowWidth = 500;
+      var windowHeight = 500;
+      
+	  var windowX = 0;
+	  var windowY = 0;  
+
+      var actor = new Image();
+      
+	  actor.src = "ship2.png"; 
+	          
+      var photo = new Image();
+      
+      photo.src = "background_test_ease_wP1.png";
+      
+	  photo.addEventListener('load', photoLoaded , false);
+	
+      function photoLoaded ()
+        {
+		  startUp();
+	    }
+
+      function startUp ()
+        {
+          setInterval(drawEaseIn, 1000 / 60);
+        }
+
+      function drawPlayer ()
+        {
+/*          context.globalAlpha = .25;
+          context.save();
+          context.strokeStyle = "#000000";
+          context.fillStyle = "#99CCEE";
+          context.beginPath();
+          context.arc(250, windowY + 50, 10, 0, Math.PI * 2, true);
+          context.closePath(); 
+          context.fill();  
+          context.clip();
+          context.stroke();                   
+          context.beginPath();
+          context.arc(250, windowY + 50, 10, 0, Math.PI * 2, true);
+          context.clip();
+          context.closePath();
+          context.restore();
+*/        }
+
+
+      function drawPlayer2 ()
+        {    
+          //context.save(); context.drawImage(actor, 217.5, windowY + 150, 64, 64); context.restore();
+          context.globalAlpha = 1; drawPlayer();  
+   
+        }
+
+      
+      function drawEaseIn ()
+        {          
+		  context.drawImage(photo, windowX, windowY,
+		                    windowWidth, windowHeight, 0, 0, windowWidth, windowHeight);
+		  
+		  		  
+          windowY += 1;
+          drawPlayer();		 		     
+		  
+		  if (windowY > photo.height - windowHeight)
+		    {
+		      windowY = 230;
+			  drawPlayer2();		
+              
+		    }
+		    
+        }
+    }
+    
+  </script>
+  
+</head>
+
+<body>
+
+  <div style="position:absolute; top:50px; left: 50px;">
+  
+    <canvas id="canvas" width="500" height="500">
+      Your Browser Does Not Support HTML5 Canvas.
+    </canvas>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+﻿p
+{
+	text-align: center;
+}
+div#container
+{
+  background: #5588BB;
+  height: 340px;
+  width: 600px;
+  border: 1px solid #000000;	
+}
+div#canvascontainer
+{
+  background: #5588BB;
+  margin-top: 25px;
+  border: 0px solid #000000;	
+}
+
+canvas#canvas
+{
+   border: 1px solid #000000;
+   margin-left: -9px;
+}
+
+div#output
+{
+   width: 600px;
+   height: 150px;
+   overflow-x: hidden;
+   overflow-y: auto;
+   border: 1px solid #000000;
+   background-color: #000;
+   color: #fff;
+}
+div
+{
+   width: 600px;
+   height: 50px;
+}

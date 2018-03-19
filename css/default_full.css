@@ -1,0 +1,280 @@
+﻿header, article, aside, footer {
+	display: block;
+}
+
+* {
+	margin: 0px;
+	padding:: 0px;
+}
+
+body {
+background: #336699;  //url('../../images/headercontainer_bg_1.png') no-repeat fixed center top;    
+	text-align: center;
+}
+
+a
+{
+  color: #000000;
+  text-decoration:none;
+}
+
+a:visited
+{
+  color: #353F3E;
+  text-decoration:none;	
+}
+
+a:hover
+{
+  color: #353F3E;
+  text-decoration:none;	
+}
+
+p
+{
+  text-align: center;
+}
+
+#document_wrapper {
+
+background: #5588BB;
+    border: 2px solid #A9B9D2;
+	width: 900px;
+	margin: 15px auto;
+	text-align: left;
+}
+
+/* #98A8C1 */
+
+#fixed_header_container {
+    position: fixed;
+    top: 0px;
+	width: 900px;
+	margin: 15px auto;
+
+}
+
+#fixed_header {
+//	background: #EEFFCC;
+        border: 0px// 1px solid #000000;
+	height: 150px;
+	padding: 20px;
+}
+
+#rc_status {
+	background: #AACAE3;
+	float: left;
+	border: 1px solid #999999;	
+	height: 120px;
+	width: 175px;
+	margin: 10px 10px; 
+}
+
+#news_rotater {
+	background: #AACAE3;
+	float: left;
+	border: 1px solid #000000;	
+	height: 150px;
+	width:  430px;
+	margin: 0px 15px; 
+}
+
+#update_log {
+	background: #AACAE3;
+	float: right;
+	border: 1px solid #999999;	
+	height: 120px;
+	width: 175px;
+	margin: 10px 10px;
+}
+
+#main_container {
+	background: #5588BB;
+	border: 0px solid #000000;
+	height: 700px;
+
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#nav_aovaffiliate {
+	float: right;
+	border: 0px solid #999999;	
+	height: auto;
+	width: 150px;
+	margin-top: -15px;
+	margin-right:25px;
+}
+
+#nav_aovaffiliate_button {
+    background: #CCECF7;
+    font-size: 14px;
+    text-align: center; 
+	border: 2px solid #A9B9D2;	
+	height: 25px;
+	width: 140px;
+	margin: 5px auto;
+}	
+
+#nav_category {
+//    background: #A9B9D2;
+	float: right;
+	border: 0px solid #A9B9D2;	
+	height: auto;
+	width: 150px;
+	margin: 0px 0px; 
+	margin-top: 15px;
+	margin-right: 1px;
+}
+
+#nav_category_button {
+    background: #CCECF7;
+    font-size: 14px;
+    text-align: center; 
+	border: 2px solid #A9B9D2;
+	height: 25px;
+	width: 140px;
+	margin: 5px auto; 
+}
+
+#nav_content {
+    background: #AACAE3;
+	float: left;
+	border: 0px solid #5588BB;	
+	height: 50px;
+	width: 600px;
+	margin: 0px 0px;
+}
+
+#nav_content_button {
+    background: #CCECF7;
+    float: inherit;
+    font-size: 14px;
+    text-align: center; 
+	border: 1px solid #000000;	
+	height: 30px;
+	width: 100px;
+	margin: 10px 6px 10px 11px;
+}
+
+#page_header {
+	background: #AACAE3;
+	float: left;
+	border: 2px solid #5588BB;	
+	height: 100px;
+	width:  450px;
+	margin: 15px 0px 15px 35px;
+}
+
+#page_icon {
+	background: #AACAE3;
+	float: left;
+	border: 1px solid #5588BB;	
+	height: 100px;
+	width:  125px;
+	margin: 15px 0px 15px 22px;	
+}
+
+#page_display {
+	background: #AACAE3;        
+	float: left;
+	border: 2px solid #5588BB;	
+	height: 550px;
+	width:  600px;
+	margin: 0px 35px; 
+}
+
+
+
+ /* Not Currently Used */
+
+
+#theme_switcher {
+	background: #AACAE3;
+	float: left;
+	border: 1px solid #999999;	
+	height: 150px;
+	width: 150px;
+	margin: 375px 0px;
+}
+
+#main_footer {
+	background: #AACAE3;
+	border: 1px solid #000000;
+	text-align: center; 
+	height: 80px;
+	width: 898px;
+	margin: 0px 0px;
+}
+
+#sitemap_footer {
+	background: #AACAE3;
+	border: 1px solid #000000;
+	text-align: center; 
+	height: 50px;
+	width: 900px;
+	margin: 0px 0px;
+	
+}
+
+#footer {
+	background: #AACAE3;
+    border: 2px solid #A9B9D2;
+    text-align: center; 
+	height: 225px;
+	width: 800px;
+	margin: 0px auto;
+}
+
+
+#main_header {
+        //opacity:0.4;
+
+        border: opx//  1px solid #000000;
+	height: 150px;
+	padding: 20px;
+}
+
+#logo_rotater {
+    background: #AACAE3;
+	float: right;
+	border: 1px solid #999999;	
+	height: 225px;
+	width: 150px;
+	margin: 15px auto;  
+}
+
+#update_rotater {
+    background: #AACAE3;
+	float: left;
+	border: 1px solid #5588BB;	
+	height: 150px;
+	width:  625px;
+	margin: 15px 38px; 
+}
+
+
+// footer import
+#footer
+{
+	background: #5588BB;
+
+	text-align: center; 
+	height: 225px;
+	width: 800px;
+	margin: 0px auto;
+}
+
+#footer a
+{
+  color: #000000;
+  text-decoration:underline;
+}
+#footer a.visited
+{
+  color: #000000;
+  text-decoration:underline;	
+}
+
+
+

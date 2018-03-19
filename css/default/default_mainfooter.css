@@ -1,0 +1,17 @@
+﻿#main_footer {
+	background: #AACAE3;
+	border: 1px solid #000000;
+	text-align: center; 
+	height: 80px;
+	width: 900px;
+	margin: 0px 00px;
+}
+
+#cc_footer {
+	background: #AACAE3;
+	border: 1px solid #000000;
+	text-align: center; 
+	height: 100px;
+	width: 900px;
+	margin: 0px 00px;
+}

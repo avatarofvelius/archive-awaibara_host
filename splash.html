@@ -1,0 +1,113 @@
+<!Doctype html>
+
+<html>
+<head>
+  <title> Splash ~ Awai Bara o Kangaete </title>
+  <style type="text/css">
+
+  body {
+	padding:0px;
+	margin:0px;
+}
+  .layer {
+	position:absolute;
+	height:640px;
+	width:100%;
+}
+
+#back {
+	background: #000000 url(/images/background.png);
+}
+
+#middle {
+	background: transparent url(/images/hidden.png);
+}
+
+#front {
+	background: transparent url(/images/front.png);
+}
+
+#header {
+        background: transparent; border: 1px solid #5588BB; width: 100%; text-align: center; text-decoration: underline; color: #5588BB; margin: 0px 0px; 
+}
+
+#footer {
+        background: transparent; border: 1px solid #5588BB; width: 100%; text-align: center; color: #5588BB; margin: 640px 0px 10px 0px;
+}
+
+  </style>
+
+    <script type="text/javascript" 
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script> 
+    
+
+    <script type="text/javascript">
+        $(function () {
+            var speed = .25,
+                
+                $back = $('#back'),     
+                $middle = $('#middle'), 
+                $front = $('#front'),
+                xPos = 0,               
+                $win = $(window);       
+
+            $(document).mousemove(function (e) {
+                var halfWidth = $win.width()/2;
+                              
+                speed = e.pageX - halfWidth;
+                speed /= halfWidth;
+            });
+
+            $(document).mouseout(function (e) {
+                speed = .25;
+            });
+
+            setInterval(function () {
+                $back.css({
+                    backgroundPosition: xPos + 'px 0px'
+                });
+                $middle.css({
+                    backgroundPosition: (xPos * 2) + 'px 0px'
+                });
+                $front.css({
+                    backgroundPosition: (xPos * 3) + 'px 0px'
+                });
+
+                xPos += speed;
+            }, 30);
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+<div id="header">
+     <p> -> Awai Bara o Kangaete Is Currently Under Development<a href="/development/index.php">.</a> <-
+     <br> -> A Companion Development Blog Will Be Following Shortly<a href="/development/document.php">.</a> <-
+</div>
+
+<div id="back" class="layer"></div>
+<div id="middle" class="layer"></div>
+<div id="front" class="layer"></div>
+
+
+        <p id="footer"> 
+          <br>
+            Avatar of Velius&#44; Awai Bara o Kangaete&#44; &#38; Any Other Documents&#44;  Images&#44; Or Intelectual Property
+          <br>
+            Viewable On This Website Or Any Other Affiliated Websites 
+          <br>                    
+            Are Copyright &#169; 2006 - 2012 &#169;
+          <br><br>
+        </p>     
+    
+
+</body>
+
+</html>
+
+

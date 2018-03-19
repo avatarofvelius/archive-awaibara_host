@@ -1,0 +1,24 @@
+﻿header, article, aside, footer {
+	display: block;
+}
+
+* {
+	margin: 0px;
+	padding:: 0px;
+}
+
+body {
+    background: #5588BB;
+	text-align: center;
+}
+
+#document_wrapper {
+    background: #5588BB;
+    border: 1px solid #5588BB;
+	width: 900px;
+	margin: 15px auto;
+	text-align: left;
+}
+
+/* #98A8C1 */
+
